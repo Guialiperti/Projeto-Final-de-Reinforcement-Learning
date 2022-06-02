@@ -15,6 +15,7 @@ Repositório para o projeto final da matéria reinforcement learning
 
 Um trabalho correlato é um robo trader com base em um regressor que utiliza o preço normalizado na entrada ao invez do retorno, é uma implementação utilizando deep learning redes neurais LSTM(Long Short Term Memory). *Referência: https://arxiv.org/pdf/1707.07338.pdf*
 
+
 ## Caso de uso 2 - Bank Heist 
 
 **Ambiente:** O ambiente do gym possuí uma biblioteca de jogos do Atari. Nesse caso o jogo em questão é Bank Heist, uma cidade com bancos e caminhos onde um carro(agente) pode andar e ser perseguido por policiais após roubar os bancos. No início do jogo o agente(carro de fuga) começa com 4 vidas, perdendo uma cada vez que é pego pelo carro de polícia, fica sem gasolina ou passa na própria dinamite. O objetivo é o carrao roubar todos os bancos da cidade e destruir o máximo de carros de polícia e ir para uma próxima sem ser pego. Ao chegar na nova cidade o carro é reabastecido.
@@ -26,7 +27,7 @@ Um trabalho correlato é um robo trader com base em um regressor que utiliza o p
 
 **Trabalhos correlatos e escolha de reinforcement learning:** Existem outras soluções para jogar esse jogo de forma otimizada, mas eu acredito que reinforcement learning é uma boa opção pela facilidade, o jogo é simples e não leva muito tempo para o agente aprender a jogar. Por outro lado fazer um programa "vanilla" para jogar esse jogo não seria tão trivial.
 
-Um trabalho correlato é um modelo de aprendizagem profunda que aprende os controles diretamente a partir de um input utilizando aprendizagem de reforço. É uma rede neural treinada com uma variante de Q-learning, cuja entrada é os pixels brutos e a saída é uma função cujo valor estima as recompensas futuras.
+Um trabalho correlato é um modelo de aprendizagem profunda que aprende os controles diretamente a partir de um input utilizando aprendizagem de reforço. É uma rede neural treinada com uma variante de Q-learning, cuja entrada é os pixels brutos e a saída é uma função cujo valor estima as recompensas futuras. Essa implementação é bastante trabalhosa e não apresenta grande diferença de resultado em comparação com a implementação descrita acima.
 *Referência: https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf*
 
 ## Caso de uso 3 - Asteroids
@@ -39,7 +40,7 @@ Um trabalho correlato é um modelo de aprendizagem profunda que aprende os contr
 
 **Trabalhos correlatos e escolha de reinforcement learning:** Existem outras soluções para jogar esse jogo de forma otimizada, mas eu acredito que reinforcement learning é uma boa opção pela facilidade, o jogo é simples e não leva muito tempo para o agente aprender a jogar. Por outro lado fazer um programa "vanilla" para jogar esse jogo não seria tão trivial.
 
-Um trabalho correlato é um modelo de aprendizagem profunda que aprende os controles diretamente a partir de um input utilizando aprendizagem de reforço. É uma rede neural treinada com uma variante de Q-learning, cuja entrada é os pixels brutos e a saída é uma função cujo valor estima as recompensas futuras.
+Um trabalho correlato é um modelo de aprendizagem profunda que aprende os controles diretamente a partir de um input utilizando aprendizagem de reforço. É uma rede neural treinada com uma variante de Q-learning, cuja entrada é os pixels brutos e a saída é uma função cujo valor estima as recompensas futuras. Essa implementação é bastante trabalhosa e não apresenta grande diferença de resultado em comparação com a implementação descrita acima.
 *Referência: https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf*
 
 ## Escolha de implementação:
