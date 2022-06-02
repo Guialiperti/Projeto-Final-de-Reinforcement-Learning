@@ -22,4 +22,18 @@ Repositório para o projeto final da matéria reinforcement learning
 
 **Recompensas:** As recompensas do agente são dadas pelo própio ambiente. Sendo que elas estão ligadas à quantidade de bancos que rouba e carros de polícia que destroi. 
 
-**Trabalhos correlatos e escolha de reinforcement learning:** 
+**Trabalhos correlatos e escolha de reinforcement learning:** Existem outras soluções para jogar esse jogo de forma otimizada, mas eu acredito que reinforcement learning é uma boa opção pela facilidade, o jogo é simples e não leva muito tempo para o agente aprender a jogar. Por outro lado fazer um programa "vanilla" para jogar esse jogo não seria tão trivial. 
+
+## Caso de uso 3 - Asteroids
+
+**Ambiente:** O ambiente do gym possuí a biblioteca de jogos do Atari. Nesse caso o jogo em questão é Asteroids, o ambiente é composto por um campo de asteróides que se movem. A nave (agente) deve destruir todos os asteroides atirando neles e evitar colidir com os mesmos. Ao destruir todos os asteróides, inicia-se um novo nível e aparecerão novos asteróides.  
+
+**Agente:** O agente é uma nave, ela pode se mover em todas as direções, rotacionar e atirar, destruindo os asteroides. Quando ele é atingido por um asteroide o agente perde uma vida. 
+
+**Recompensas:** As recompensas do agente são dadas pelos asteroides que ele destroi, quanto menor, mais pontos. Conforme ele vai sobrevivendo(evitando colisões) e passando de fase, ele vai pontuando mais. 
+
+**Trabalhos correlatos e escolha de reinforcement learning:** Existem outras soluções para jogar esse jogo de forma otimizada, mas eu acredito que reinforcement learning é uma boa opção pela facilidade, o jogo é simples e não leva muito tempo para o agente aprender a jogar. Por outro lado fazer um programa "vanilla" para jogar esse jogo não seria tão trivial. 
+
+## Escolha de implementação:
+
+Escolhi o 
