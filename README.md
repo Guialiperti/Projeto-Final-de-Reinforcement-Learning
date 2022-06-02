@@ -11,28 +11,36 @@ Repositório para o projeto final da matéria reinforcement learning
 
 **Recompensas:** As recompensas do agente estão ligadas à precisão e rentabilidade dele. Ou seja, a recompensa para o agente seria uma ponderação entre o quanto um dado "padrão" de estratégia acerta(precisão) e qual a rentabilidade que ele gera quando acerta. 
 
-**Trabalhos correlatos e escolha de reinforcement learning:** Existem diversas implementações de Robo traders das mais simples às mais complexas. Acredito que a abordagem de reinforcement learning pode funcionar bem aqui já que hoje temos um número gigantesco de dados passados e presentes sendo gerados a todo o momento sobre o mercado financeiro. 
+**Trabalhos correlatos e escolha de reinforcement learning:** Existem diversas implementações de Robo traders das mais simples às mais complexas. Acredito que a abordagem de reinforcement learning pode funcionar bem aqui já que hoje temos um número gigantesco de dados passados e presentes sendo gerados a todo o momento sobre o mercado financeiro.
+
+Um trabalho correlato é um robo trader com base em um regressor que utiliza o preço normalizado na entrada ao invez do retorno, é uma implementação utilizando deep learning redes neurais LSTM(Long Short Term Memory). *Referência: https://arxiv.org/pdf/1707.07338.pdf*
 
 ## Caso de uso 2 - Bank Heist 
 
 **Ambiente:** O ambiente do gym possuí uma biblioteca de jogos do Atari. Nesse caso o jogo em questão é Bank Heist, uma cidade com bancos e caminhos onde um carro(agente) pode andar e ser perseguido por policiais após roubar os bancos. No início do jogo o agente(carro de fuga) começa com 4 vidas, perdendo uma cada vez que é pego pelo carro de polícia, fica sem gasolina ou passa na própria dinamite. O objetivo é o carrao roubar todos os bancos da cidade e destruir o máximo de carros de polícia e ir para uma próxima sem ser pego. Ao chegar na nova cidade o carro é reabastecido.
-*Referência:https://www.gymlibrary.ml/environments/atari/bank_heist/*
+*Referência: https://www.gymlibrary.ml/environments/atari/bank_heist/*
 
 **Agente:** O agente é um carro que pode andar pela cidade(2D) podendo virar a direita ou esquerda e ir reto. Quando o carro passa por cima de um banco, ele rouba esse banco e um carro de polícia vai começar a persegui-lo. O agente deve fugir do carro de polícia e pode destrui-lo deixando uma dinamite para trás. 
 
 **Recompensas:** As recompensas do agente são dadas pelo própio ambiente. Sendo que elas estão ligadas à quantidade de bancos que rouba e carros de polícia que destroi. 
 
-**Trabalhos correlatos e escolha de reinforcement learning:** Existem outras soluções para jogar esse jogo de forma otimizada, mas eu acredito que reinforcement learning é uma boa opção pela facilidade, o jogo é simples e não leva muito tempo para o agente aprender a jogar. Por outro lado fazer um programa "vanilla" para jogar esse jogo não seria tão trivial. 
+**Trabalhos correlatos e escolha de reinforcement learning:** Existem outras soluções para jogar esse jogo de forma otimizada, mas eu acredito que reinforcement learning é uma boa opção pela facilidade, o jogo é simples e não leva muito tempo para o agente aprender a jogar. Por outro lado fazer um programa "vanilla" para jogar esse jogo não seria tão trivial.
+
+Um trabalho correlato é um modelo de aprendizagem profunda que aprende os controles diretamente a partir de um input utilizando aprendizagem de reforço. É uma rede neural treinada com uma variante de Q-learning, cuja entrada é os pixels brutos e a saída é uma função cujo valor estima as recompensas futuras.
+*Referência: https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf*
 
 ## Caso de uso 3 - Asteroids
 
-**Ambiente:** O ambiente do gym possuí a biblioteca de jogos do Atari. Nesse caso o jogo em questão é Asteroids, o ambiente é composto por um campo de asteróides que se movem. A nave (agente) deve destruir todos os asteroides atirando neles e evitar colidir com os mesmos. Ao destruir todos os asteróides, inicia-se um novo nível e aparecerão novos asteróides.  
+**Ambiente:** O ambiente do gym possuí a biblioteca de jogos do Atari. Nesse caso o jogo em questão é Asteroids, o ambiente é composto por um campo de asteróides que se movem. A nave (agente) deve destruir todos os asteroides atirando neles e evitar colidir com os mesmos. Ao destruir todos os asteróides, inicia-se um novo nível e aparecerão novos asteróides. *Referência: https://www.gymlibrary.ml/environments/atari/asteroids*
 
 **Agente:** O agente é uma nave, ela pode se mover em todas as direções, rotacionar e atirar, destruindo os asteroides. Quando ele é atingido por um asteroide o agente perde uma vida. 
 
 **Recompensas:** As recompensas do agente são dadas pelos asteroides que ele destroi, quanto menor, mais pontos. Conforme ele vai sobrevivendo(evitando colisões) e passando de fase, ele vai pontuando mais. 
 
-**Trabalhos correlatos e escolha de reinforcement learning:** Existem outras soluções para jogar esse jogo de forma otimizada, mas eu acredito que reinforcement learning é uma boa opção pela facilidade, o jogo é simples e não leva muito tempo para o agente aprender a jogar. Por outro lado fazer um programa "vanilla" para jogar esse jogo não seria tão trivial. 
+**Trabalhos correlatos e escolha de reinforcement learning:** Existem outras soluções para jogar esse jogo de forma otimizada, mas eu acredito que reinforcement learning é uma boa opção pela facilidade, o jogo é simples e não leva muito tempo para o agente aprender a jogar. Por outro lado fazer um programa "vanilla" para jogar esse jogo não seria tão trivial.
+
+Um trabalho correlato é um modelo de aprendizagem profunda que aprende os controles diretamente a partir de um input utilizando aprendizagem de reforço. É uma rede neural treinada com uma variante de Q-learning, cuja entrada é os pixels brutos e a saída é uma função cujo valor estima as recompensas futuras.
+*Referência: https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf*
 
 ## Escolha de implementação:
 
