@@ -36,4 +36,4 @@ Repositório para o projeto final da matéria reinforcement learning
 
 ## Escolha de implementação:
 
-Escolhi o 
+Todos os casos descritos tem ambiente com documentação extensa, então isso não seria uma dificuldade na implementação. O robo trader é o único que teria uma aplicação de mercado, mesmo que parcial por ser simplificado. Acredito que o Robo trader, mesmo não tendo problemas de ambiente é o mais complexo dos 3 casos e por eu ter um background de finanças, isso facilitaria o entendimento e calibragem das recompensas, além de trazer mais reconhecimento para meu campo de atuação, por conta disso optei por escolher ele.
